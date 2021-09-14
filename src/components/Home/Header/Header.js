@@ -1,47 +1,37 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import IconButton from '@material-ui/core/IconButton';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/core/MenuItem';
-import Button from '@material-ui/core/Button';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-  }));
-
-  
+import logo from '../../../assets/images/Food_heavens_2.png';
+import "./Header.css";
 
 const header = () => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    const classes = useStyles();
+    
     return (
-        
+
+        //Navbar starts here
         <div>
-            
-                <AppBar position="static">
-                    <Toolbar>
-                        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon />
-                        </IconButton>
-                        <Typography variant="h6" className={classes.title}>
-                            News
-                        </Typography>
-                        <Button color="inherit">Login</Button>
-                    </Toolbar>
-                </AppBar>
-           
-            
+            <nav class="navbar navbar-expand-lg nav-design">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img className="logo" src={logo} alt=""></img></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                  {/* Search */}
+                  <div class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search by Postal Code" aria-label="Search"/>
+                    <button class="btn btn-dark" type="submit">Search</button>
+                  </div>
+
+                   {/* Menus */}   
+                  <div class="d-flex ms-auto align-items-center justify-content-center blog-page-div">
+                      <a className="blog-page mx-3" href="/" >Social Media</a>
+                      <a className="become-seller mx-3" href="/">Become Seller</a>
+                      <a className="signin-btn mx-3" href="/">Sign In</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+                      
         </div>
     )
 }
