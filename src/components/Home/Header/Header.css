@@ -25,6 +25,10 @@ img {
     font-weight: 600;
     color: white;
 }
+.hamburger-menu{
+    display: none;
+}
+
 @media screen and  (max-width: 991px) {
 
     .blog-page-div {
@@ -32,6 +36,17 @@ img {
         text-align: center;
         margin-top: 10px;
     }
+    .search-bar{
+        width: 60% !important;
+        text-align: center !important;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    
 }
 
 .signin-btn {
@@ -60,4 +75,71 @@ img {
 .blog-page:hover, .become-seller:hover {
     color: #1C1F23;
 
+}
+/* .form-control{
+    padding: 0.375rem 7.75rem !important;
+} */
+
+/* sidebar btn */
+
+.signin-btn-mbl {
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(2, 1, 1);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #fbfcff;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.blog-page-mbl, .become-seller-mbl {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border-bottom: 2px solid white;
+
+   
+}
+
+.signin-btn-mbl:hover {
+    color: #000000;
+    background-color: rgb(98, 218, 148);
+}
+
+.blog-page-mbl:hover, .become-seller-mbl:hover {
+    color: rgb(98, 218, 148);
+}
+
+/* soical media mobile */
+
+.social-mbl {
+    margin-top: 1.5rem;
+}
+.social-mbl a {
+    color: white;
+    padding-left: 3.2px;
+}
+
+.fb:hover {
+    color: #1877f2;
+}
+.insta:hover {
+    color:#c32aa3;
+}
+.tweet:hover {
+    color: #1da1f2;
+}
+.linkd:hover{
+    color: #0a66c2;
+}
+.google:hover {
+    color:#db4437;
 }

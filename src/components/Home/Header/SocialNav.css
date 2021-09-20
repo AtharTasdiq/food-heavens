@@ -1,0 +1,37 @@
+.social-main{
+    background-color: #CEE5D0;
+}
+.social-main a,span{
+    color: black;
+    font-weight: 500;
+}
+/* .social-nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+.mobile-social-nav{
+    display: none;
+}
+@media screen and  (max-width: 991px){
+    .social-nav{
+        display: none !important;
+    }
+    .mobile-social-nav{
+        display: block;
+    }
+}
+.fb:hover {
+    color: #1877f2;
+}
+.insta:hover {
+    color:#c32aa3;
+}
+.tweet:hover {
+    color: #1da1f2;
+}
+.linkd:hover{
+    color: #0a66c2;
+}
+.google:hover {
+    color:#db4437;
+}
